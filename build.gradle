@@ -1,7 +1,9 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+    //引入gradle配置文件
+    apply from: "config.gradle"
+
     repositories {
         google()
         jcenter()
@@ -24,7 +26,13 @@ buildscript {
 
 }
 
-tasks.getByPath(":tools:releaseAndroidJavadocs").enabled = false
+//JavaDocs文档不进行编译
+//tasks.getByPath(":tools:releaseAndroidJavadocs").enabled = false
+tasks.findAll {
+    task -> task.name.startsWith('releaseAndroidJavadocs')
+}.each { Task task ->
+    task.enabled = false;
+}
 
 allprojects {
     repositories {

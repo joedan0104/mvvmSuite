@@ -3,10 +3,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 26
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -27,15 +28,15 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:appcompat-v7:26.1.0"
-    compile "com.android.support:design:26.1.0"
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["design"]
     // JSON 解析框架
-    compile "com.google.code.gson:gson:2.8.2"
+    compile rootProject.ext.dependencies["gson"]
 }
 
 publish {
     userOrg = 'cool'   //bintray.com 账户下某个组织id
-    groupId = 'net.hmzs.tools'  //jcenter上的路径，一般为包名
+    groupId = 'com.jindan.tools'  //jcenter上的路径，一般为包名
     artifactId = 'JDTOOLS'  //项目名称
     publishVersion = '1.0.2'  //版本号
     desc = 'custom chart for android'   //项目介绍，可以不写
