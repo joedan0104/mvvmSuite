@@ -1,5 +1,17 @@
 apply plugin: 'com.android.application'
 
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    //tingyun dependency
+//    mavenCentral()
+    //阿里云仓库(外网被墙时使用)
+    //神策SDK仓库
+    maven{ url 'https://dl.bintray.com/zouyuhan/maven'}
+    maven { url "https://jitpack.io" }
+}
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -28,4 +40,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':tools')
+//    implementation project(':sharesdk')
+    implementation project(':views')
+    implementation project(':network')
+//    implementation project(':database')
+//    implementation project(':mvvm')
 }

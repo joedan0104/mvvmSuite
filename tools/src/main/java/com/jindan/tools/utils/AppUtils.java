@@ -352,6 +352,17 @@ public final class AppUtils {
     }
 
     /**
+     * 获取当前 App 版本号名称
+     * 对应build.gradle中的versionName
+     *
+     *
+     * @return App 版本号名称
+     */
+    public static String getAppVersionName() {
+        return getVersionName(ContextHolder.getContext());
+    }
+
+    /**
      * 获取 App 版本号名称
      * 对应build.gradle中的versionName
      *

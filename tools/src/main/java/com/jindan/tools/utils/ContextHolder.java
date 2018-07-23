@@ -81,6 +81,10 @@ public class ContextHolder {
         return getResource().getDrawable(id);
     }
 
+    public static int getDimenPixel(@DimenRes int id) {
+        return getResource().getDimensionPixelSize(id);
+    }
+
     public static int getDimen(@DimenRes int id) {
         return getResource().getDimensionPixelSize(id);
     }

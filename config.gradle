@@ -94,7 +94,7 @@ ext {
             "jpush"                        : "cn.jiguang.sdk:jpush:3.1.1",
             "jpush-jcore"                  : "cn.jiguang.sdk:jcore:1.1.9",
             // materialish-progress
-            "materialish-progress"         : "com.pnikosis:materialish-progress:1.0",
+            "materialish-progress"         : "com.pnikosis:materialish-progress:1.7",
             // bottom-navigation
             "bottom-navigation"            : "com.ashokvarma.android:bottom-navigation-bar:2.0.4",
             // 腾讯bugly

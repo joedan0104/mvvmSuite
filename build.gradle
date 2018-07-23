@@ -29,6 +29,7 @@ buildscript {
 //JavaDocs文档不进行编译
 tasks.getByPath(":tools:releaseAndroidJavadocs").enabled = false
 tasks.getByPath(":network:releaseAndroidJavadocs").enabled = false
+tasks.getByPath(":views:releaseAndroidJavadocs").enabled = false
 //tasks.findAll {
 //    task -> task.name.contains('releaseAndroidJavadocs')
 //}.each { Task task ->
