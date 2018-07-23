@@ -4,18 +4,12 @@ apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     buildToolsVersion rootProject.ext.android.buildToolsVersion
+
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode 1
         versionName "1.0"
-    }
-    lintOptions {
-        abortOnError false
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes {
         release {
@@ -23,21 +17,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile rootProject.ext.dependencies["appcompat-v7"]
-    compile rootProject.ext.dependencies["design"]
-    // JSON 解析框架
-    compile rootProject.ext.dependencies["gson"]
+    // 网络请求框架
+    api "com.squareup.retrofit2:retrofit:2.3.0"
+    compileOnly project(':tools')
 }
 
 publish {
     userOrg = 'cool'   //bintray.com 账户下某个组织id
-    groupId = 'com.jindan.tools'  //jcenter上的路径，一般为包名
-    artifactId = 'JDTOOLS'  //项目名称
-    publishVersion = '1.0.3'  //版本号
+    groupId = 'com.jindan.network'  //jcenter上的路径，一般为包名
+    artifactId = 'JDNetWork'  //项目名称
+    publishVersion = '1.0.2'  //版本号
     desc = 'custom chart for android'   //项目介绍，可以不写
     website = ''  //项目主页，可以不写
 }

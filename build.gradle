@@ -27,17 +27,20 @@ buildscript {
 }
 
 //JavaDocs文档不进行编译
-//tasks.getByPath(":tools:releaseAndroidJavadocs").enabled = false
-tasks.findAll {
-    task -> task.name.startsWith('releaseAndroidJavadocs')
-}.each { Task task ->
-    task.enabled = false;
-}
+tasks.getByPath(":tools:releaseAndroidJavadocs").enabled = false
+tasks.getByPath(":network:releaseAndroidJavadocs").enabled = false
+//tasks.findAll {
+//    task -> task.name.contains('releaseAndroidJavadocs')
+//}.each { Task task ->
+//    task.enabled = false;
+//}
 
 allprojects {
     repositories {
         google()
         jcenter()
+        //https://bintray.com仓库地址
+//        maven { url 'https://dl.bintray.com/cool/maven' }
     }
 }
 
