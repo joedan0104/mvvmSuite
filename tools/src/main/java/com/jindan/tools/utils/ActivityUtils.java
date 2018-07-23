@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.view.View;
 
-import net.hmzs.tools.R;
+import com.jindan.tools.R;
 import com.jindan.tools.log.Logger;
 
 import java.lang.ref.WeakReference;

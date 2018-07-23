@@ -22,7 +22,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import net.hmzs.tools.R;
+import com.jindan.tools.R;
+
 
 /**
  * Author: zhaolei

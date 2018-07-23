@@ -12,7 +12,7 @@ import android.view.Gravity;
 import android.widget.Toast;
 
 import com.jindan.tools.Config;
-import net.hmzs.tools.R;
+import com.jindan.tools.R;
 import com.jindan.tools.utils.ActivityUtils;
 import com.jindan.tools.utils.ContextHolder;
 import com.jindan.tools.utils.DateUtils;

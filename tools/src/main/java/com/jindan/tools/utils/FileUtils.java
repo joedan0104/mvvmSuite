@@ -6,7 +6,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.text.TextUtils;
 
-import net.hmzs.tools.R;
+import com.jindan.tools.R;
 import com.jindan.tools.encryption.MDUtil;
 
 import java.io.BufferedInputStream;

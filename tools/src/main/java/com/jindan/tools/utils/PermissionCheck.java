@@ -53,7 +53,7 @@ import android.support.v4.content.PermissionChecker;
 import android.util.Log;
 
 import com.jindan.tools.Config;
-import net.hmzs.tools.R;
+import com.jindan.tools.R;
 
 import java.io.File;
 import java.util.ArrayList;
