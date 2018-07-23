@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 下拉放大图片 -->
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+
+    <!-- 标题栏样式 -->
+    <!-- Base application theme. -->
+    <declare-styleable name="ToolBar">
+        <!-- 左按钮是否可见|背景 -->
+        <attr name="leftSrc" format="reference|color" />
+        <!-- 左文本内容 -->
+        <attr name="leftText" format="string" />
+        <attr name="leftColor" format="color" />
+        <attr name="leftSize" format="dimension" />
+        <!-- 标题文本内容 -->
+        <attr name="titleText" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <!-- 标题文本内容 -->
+        <attr name="subTitleColor" format="color" />
+        <attr name="subTitleSize" format="dimension" />
+        <!-- 右文本内容 -->
+        <attr name="rightColor" format="color" />
+        <attr name="rightSize" format="dimension" />
+        <!-- 背景 -->
+        <attr name="barBackground" format="reference|color" />
+        <!-- appbar高度 -->
+        <attr name="barHeight" format="dimension" />
+        <!-- divider 颜色 -->
+        <attr name="bottomDivider" format="color" />
+        <attr name="bottomDividerHeight" format="dimension" />
+    </declare-styleable>
+
+    <!-- 左右控件 -->
+    <declare-styleable name="LeftRightLayout">
+        <attr name="iconImg" format="reference" />
+        <attr name="iconFont" format="string" />
+        <attr name="iconFontColor" format="color" />
+        <attr name="iconFontSize" format="dimension" />
+        <attr name="leftTxt" format="string" />
+        <attr name="leftTxtColor" format="color" />
+        <attr name="leftTxtRecom" format="string" />
+        <attr name="leftTxtSize" format="dimension" />
+        <attr name="rightTxt" format="string" />
+        <attr name="rightTxtColor" format="color" />
+        <attr name="rightTxtSize" format="dimension" />
+        <attr name="rightHintTxt" format="string" />
+        <attr name="rightHintTxtColor" format="color" />
+        <attr name="leftRightEnabled" format="boolean" />
+        <attr name="enabledColor" format="color" />
+        <attr name="arrow" format="reference" />
+    </declare-styleable>
+
+    <!-- 虚线控件 -->
+    <declare-styleable name="DashedLine">
+        <attr name="dashedLineColor" format="color" />
+        <attr name="dashedLineOrientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 有说明的EditText控件 -->
+    <declare-styleable name="ExplainEditField">
+        <attr name="labelDuration" format="integer" />
+        <attr name="labelColor" format="color" />
+        <attr name="labelTxt" format="string" />
+    </declare-styleable>
+
+    <!-- 有清除按钮EditText控件 -->
+    <declare-styleable name="ClearEditText">
+        <attr name="isShow" format="boolean" />
+    </declare-styleable>
+
+    <!-- 自定义横向滚动控件 -->
+    <declare-styleable name="MyHorizontalScroll">
+        <attr name="scrollColumn" format="integer" />
+        <attr name="scrollPadding" format="dimension" />
+        <attr name="scrollTextColor" format="color" />
+        <attr name="scrollTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- SwitchButton -->
+    <declare-styleable name="SwitchButton">
+        <attr name="hasShadow" format="boolean" />
+        <attr name="primaryColor" format="color" />
+        <attr name="primaryColorDark" format="color" />
+        <attr name="isOpened" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RotateTextView">
+        <attr name="degree" format="integer" />
+        <attr name="transX" format="dimension" />
+        <attr name="transY" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+
+        <attr name="ci_orientation" format="enum">
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0" />
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="ci_gravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07" />
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11" />
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77" />
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the vertical gravity: a top gravity will clip the bottom
+            edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag name="clip_vertical" value="0x80" />
+            <!-- Additional option that can be set to have the left and/or right edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the horizontal gravity: a left gravity will clip the right
+            edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag name="clip_horizontal" value="0x08" />
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003" />
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontal_spacing" format="dimension" />
+        <attr name="vertical_spacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordInputView">
+        <attr name="borderSize" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderRadius" format="dimension" />
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordWidth" format="dimension" />
+        <attr name="passwordColor" format="color" />
+        <attr name="passwordRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0" />
+            <enum name="y" value="1" />
+            <enum name="z" value="2" />
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction" />
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+    <!-- 带分割符的输入框 -->
+    <declare-styleable name="DivisionEditText">
+        <!-- 总共输入长度 -->
+        <attr name="totalLength" format="integer"/>
+        <!-- 每组的长度 -->
+        <attr name="eachLength" format="integer"/>
+        <!-- 分隔符 -->
+        <attr name="delimiter" format="string"/>
+        <!-- 占位符 -->
+        <attr name="placeHolder" format="string"/>
+    </declare-styleable>
+
+    <!-- 组合输入框 -->
+    <declare-styleable name="ComboEditView">
+        <!-- 标题部分 -->
+        <attr name="comboTitle" format="string" />
+        <!-- 输入框提示内容 -->
+        <attr name="comboEditHint" format="string" />
+        <!-- 输入框Tips提示内容 -->
+        <attr name="comboEditTips" format="string" />
+        <!-- 输入框Header内容 -->
+        <attr name="comboEditHeader" format="string" />
+        <!-- 小数位数 -->
+        <attr name="comboDecimalDigits" format="integer" />
+        <!-- 标题部分可否可见 -->
+        <attr name="comboTitleVisibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+        <!-- 输入框在Header部分可否可见 -->
+        <attr name="comboHeaderVisibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+        <!-- 标题部分可否可见 -->
+        <attr name="comboSplitVisibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 垂直轮播广告条 -->
+    <declare-styleable name="JDAdverView">
+        <attr name="gap" format="integer" />
+        <attr name="animDuration" format="integer"/>
+        <attr name="animDirection" format="integer">
+            <enum name="up" value="1" />
+            <enum name="down" value="-1" />
+        </attr>
+    </declare-styleable>
+</resources>

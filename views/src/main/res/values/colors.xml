@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App bar颜色 -->
+    <color name="colorPrimary">#2683CF</color>
+    <!-- 状态栏颜色(Lollipop - API Level 21 以上) -->
+    <color name="colorPrimaryDark">#2683CF</color>
+    <!-- 控件的主色调(光标颜色、checkbox背景色等) -->
+    <color name="colorAccent">#6FA8F0</color>
+    <!-- 灰色背景色 -->
+    <color name="colorGrey">#F5F5F5</color>
+    <!-- 标题栏目 -->
+    <color name="colorTitleBar">#FFFFFF</color>
+    <!-- 底部导航栏 -->
+    <color name="colorTabBar">#F7F7F7</color>
+    <!-- 透明灰色背景 -->
+    <color name="transparentGrey">#A0000000</color>
+
+    <!-- 字体颜色 -->
+    <!-- 重点文字-->
+    <color name="text_dark">#4C4D56</color>
+    <!-- 次级文字（输入状态文字）-->
+    <color name="text_black">#353535</color>
+    <color name="text_left_right_layout">#353535</color>
+    <color name="text_right_hint_txt_color">#C5C5C5</color>
+    <!--提示文字-->
+    <color name="text_grey">#999999</color>
+    <color name="text_feedback_hint">#B8BFB6</color>
+
+    <color name="text_silver">#C5C5C5</color>
+    <color name="text_orange_color">#FF8206</color>
+    <color name="text_blue">#3BB0FF</color>
+    <color name="text_red">#F95A28</color>
+    <color name="text_green">#30DBA6</color>
+    <color name="text_orange">#FF7D00</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- EditText-hint-灰色 -->
+    <color name="hint_grey">#C5C5C5</color>
+
+    <!-- 灰色线 -->
+    <color name="line_black">#999999</color>
+    <color name="line_grey">#E5E5E5</color>
+
+    <!-- item选中背景色 -->
+    <color name="item_select_bg">#F9F9F9</color>
+
+    <!-- button-enable -->
+    <color name="enable_bg">#F95A28</color>
+    <!-- button-disable -->
+    <color name="disable_bg">#CCCCCC</color>
+    <!-- button-pressed -->
+    <color name="press_bg">#EA4612</color>
+
+    <!-- 占位图文字颜色 -->
+    <color name="placeholder_text_color">#959595</color>
+    <color name="placeholder_button_text_color">#FF8206</color>
+    <color name="toolbar_text_color">#030303</color>
+    <color name="toolbar_divider_color">#F5F5F5</color>
+
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="border_line_grey">#DDDDDD</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="white_btn_bg_color">#FFFFFF</color>
+    <color name="white_btn_bg_pressed_color">#F9F9F9</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="text_color">#575757</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+
+    <!-- 黑色字体颜色 一级黑 -->
+    <color name="text_black_first">#565656</color>
+    <!-- 黑色字体颜色 二级黑 -->
+    <color name="text_black_second">#a8a8a8</color>
+    <!-- 分割线 -->
+    <color name="split_gray_color">#e5e5e5</color>
+    <!-- 警示色 -->
+    <color name="color_warning">#f20900</color>
+</resources>

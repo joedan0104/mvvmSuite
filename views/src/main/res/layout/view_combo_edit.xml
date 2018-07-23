@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/combo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/combo_edit_margin_top"
+            android:textColor="@color/text_black_second"
+            android:textSize="@dimen/combo_title_font" />
+
+        <TextView
+            android:id="@+id/combo_edit_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_below="@id/combo_title"
+            android:layout_marginTop="@dimen/combo_edit_header_margin_top"
+            android:paddingRight="@dimen/combo_edit_header_padding_right"
+            android:visibility="gone"
+            android:text=""
+            android:textColor="@color/text_black_second"
+            android:textSize="@dimen/combo_title_font" />
+
+        <EditText
+            android:id="@+id/combo_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/combo_title"
+            android:layout_toRightOf="@id/combo_edit_header"
+            android:paddingRight="32dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/account_hint"
+            android:lines="1"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_black_first"
+            android:textColorHint="@color/text_black_second"
+            android:textSize="@dimen/combo_edit_font" />
+
+        <TextView
+            android:id="@+id/combo_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/combo_edit"
+            android:layout_marginTop="@dimen/combo_tips_margin_top"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/text_black_second"
+            android:textSize="@dimen/combo_hint_font" />
+
+        <ImageView
+            android:id="@+id/delete_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/combo_edit"
+            android:layout_toLeftOf="@id/combo_tips"
+            android:layout_marginRight="@dimen/combo_delete_margin_right"
+            android:src="@drawable/icon_deleteall"
+            android:gravity="center"
+            android:padding="@dimen/combo_delete_padding"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_split"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/split_gray_color" />
+</RelativeLayout>

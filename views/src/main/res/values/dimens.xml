@@ -1,0 +1,27 @@
+<resources>
+    <dimen name="alert_width">290dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    <dimen name="shape_rectangle_radius">3dp</dimen>
+
+    <dimen name="combo_title_font">14sp</dimen>
+    <dimen name="combo_edit_font">17sp</dimen>
+    <dimen name="combo_hint_font">12sp</dimen>
+    <!-- 组合输入框 -->
+    <dimen name="combo_edit_padding">4dp</dimen>
+    <dimen name="combo_edit_zone_margin_top">8dp</dimen>
+    <dimen name="combo_edit_margin_top">8dp</dimen>
+    <dimen name="combo_edit_header_margin_top">2dp</dimen>
+    <dimen name="combo_edit_header_padding_right">10dp</dimen>
+    <dimen name="combo_edit_margin_bottom">2dp</dimen>
+    <dimen name="combo_delete_margin_top">25dp</dimen>
+    <dimen name="combo_division_delete_margin_top">8dp</dimen>
+    <dimen name="combo_delete_margin_right">5dp</dimen>
+    <dimen name="combo_camera_margin_top">26dp</dimen>
+    <dimen name="combo_camera_padding">1dp</dimen>
+    <dimen name="combo_delete_padding">2dp</dimen>
+    <dimen name="combo_tips_margin_top">3dp</dimen>
+    <dimen name="combo_input_padding">4dp</dimen>
+    <dimen name="bind_camera_margin_top">5dp</dimen>
+    <dimen name="split_line_height">0.5dp</dimen>
+</resources>

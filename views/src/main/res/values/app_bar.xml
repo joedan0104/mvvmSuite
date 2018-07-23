@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app默认设置值 -->
+    <dimen name="app_bar_height">@dimen/y88</dimen>
+    <dimen name="app_bar_title_size">20sp</dimen>
+    <dimen name="app_bar_left_size">18sp</dimen>
+    <dimen name="app_bar_right_size">18sp</dimen>
+
+    <color name="app_bar_title_color">@color/toolbar_text_color</color>
+    <color name="app_bar_left_color">@color/toolbar_text_color</color>
+    <color name="app_bar_right_color">@color/toolbar_text_color</color>
+
+    <color name="app_bar_divider_color">@color/toolbar_divider_color</color>
+    <dimen name="app_bar_divider_height">@dimen/x1</dimen>
+
+    <drawable name="app_bar_back">@drawable/selector_btn_back</drawable>
+</resources>
