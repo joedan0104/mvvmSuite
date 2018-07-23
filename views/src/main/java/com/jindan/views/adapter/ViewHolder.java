@@ -45,13 +45,14 @@ public class ViewHolder {
     }
 
     public static ViewHolder get(Context context, View convertView, ViewGroup parent, int layoutId, int position) {
+        ViewHolder holder = null;
         if (convertView == null) {
-            return new ViewHolder(context, parent, layoutId, position);
+            holder = new ViewHolder(context, parent, layoutId, position);
         } else {
-            ViewHolder holder = (ViewHolder) convertView.getTag();
-            holder.mPosition = position;
-            return holder;
+            holder = (ViewHolder) convertView.getTag();
         }
+        holder.mPosition = position;
+        return holder;
     }
 
     public int getPosition() {
